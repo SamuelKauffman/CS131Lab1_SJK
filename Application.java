@@ -1,20 +1,21 @@
-package Lab2;
+package Lab1;
 
 /**
- * @author sam Kauffman
- * @Version 0.1
- *
+ * This is the Application object that will launch our application
+ * @author Sam Kauffman
+ * @version 1.3
+ * Lab1 
+ * CS131ON
  */
 public class Application {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		BasketballTeam stats = new BasketballTeam();
-		stats.setStats(5, 10, 3, 8, 16, 10);
-		double[] array = stats.getStats();
-		for(int i = 0; i < 3; i++) {
-			System.out.println(array[i]);
-		}
-	}
+		
+		NonPlayerCharacter npc = new NonPlayerCharacter();
+		//Uncomment the line below to ensure reportStructure() method works after you have written it.
+		//System.out.println(npc.reportStructure());
+		System.out.println(npc.reportStructure());
+		System.out.println(npc.introduce());
+	}//end main
 
-}
+}//end class
