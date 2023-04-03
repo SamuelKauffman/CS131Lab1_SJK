@@ -1,4 +1,3 @@
-package Lab1;
 
 /**
  * This is the Application object that will launch our application
@@ -16,6 +15,7 @@ public class Application {
 		//System.out.println(npc.reportStructure());
 		System.out.println(npc.reportStructure());
 		System.out.println(npc.introduce());
+		System.out.println(npc.exclaim());
 	}//end main
 
 }//end class

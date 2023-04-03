@@ -1,4 +1,3 @@
-package Lab1;
 
 import java.util.Random;
 
@@ -71,7 +70,11 @@ public class NonPlayerCharacter extends GameCharacter {
 		 * @return random username
 		 */
 		public String introduce() {
-			String NAME = "";
+			String NAME = "NAME";
+			return "Hello, my name is " + NAME + "!";
+			
+		}//end introduce
+		public String exclaim(){
 			Random gen = new Random();
 			String array[] = new String[5];
 			array[0] = "Dag Gummit";
@@ -80,9 +83,8 @@ public class NonPlayerCharacter extends GameCharacter {
 			array[3] = "Jeez";
 			array[4] = "Well cheese and crackers";
 			int i = gen.nextInt(4);
-			System.out.println("Hello, my name is " + array[i] + "!");
-			return NAME;
-			
-		}//end introduce
-		
+			String phrase;
+			phrase = array[i];
+			return phrase;
+		}
 }

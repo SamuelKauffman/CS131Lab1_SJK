@@ -1,4 +1,3 @@
-package Lab2;
 
 /**
  * @author sam Kauffman
